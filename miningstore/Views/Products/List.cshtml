@@ -1,0 +1,13 @@
+﻿    <h2>Все товары</h2>
+    <h2>@Model.productCategory</h2>
+
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (Product product in Model.allProducts)
+            {
+
+                @Html.Partial("AllProducts", product)
+                }
+            }
+
+    </div>
